@@ -1,4 +1,4 @@
-import { LoggerService } from "src/app/Sevices/Logger/logger.service";
+import { LoggerService } from "src/app/services/Logger/logger.service";
 import { CalculatorService } from "./calculator.service";
 
 describe('CalculatorService',()=>{
