@@ -17,9 +17,10 @@ posts: Post[]=[]
   getPosts(){
     this.postService.getPosts().subscribe((posts) => {
       this.posts = posts;
-    })
+      console.log(this.posts);
+    });
   }
-  delete(post:any) {
+  delete(post:Post) {
     this.posts = this.posts.filter((p) => p.id != post.id);
     this.postService.deletePost(post).subscribe();
 
